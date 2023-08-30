@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/clon_google.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de google</title>
+    
+<link rel="stylesheet" href="./Clon de google_files/style.css"></head>
+<body>
+    <header class="encabezado">
+        <img class="Usuario" src="./Clon de google_files/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Usuario">
+        <a id="cajon" href="https://workspace.google.com/intl/es-419/features/"><img src="./Clon de google_files/caja.png" alt="cajon de apps"></a>
+
+        <ul>
+            <span id="b1"><a href="https://mail.google.com/mail/u/0/?ogbl">Gmail</a></span>
+            <span id="b2"><a href="https://www.google.com/imghp?hl=es&amp;authuser=0&amp;ogbl">Imágenes</a></span>
+        </ul>
+    </header>
+    <main>
+    <div class="logo">
+        <ul>
+            <span class="azul">G</span>
+            <span class="rojo">o</span>
+            <span class="amarillo">o</span>
+            <span class="azul">g</span>
+            <span class="verde">l</span>
+            <span class="rojo">e</span>
+        </ul>
+    </div>
+    <div style="position: relative;" class="barra">
+            <input type="text">    
+            <div id="micro">
+                <a data-title="Busqueda por voz" id="img" href="https://www.google.com/?hl=es"><img src="./Clon de google_files/microfono.png" alt="microfono"></a>
+                <a data-title="Busqueda por imagen" id="img" href="https://lens.google/intl/es-419/"><img src="./Clon de google_files/camara.png" alt="camara"></a>
+            </div>
+    </div>
+    <div class="botones">
+        <button id="boton"><a href="https://www.google.com.mx/?hl=es-419&amp;pli=1">Buscar con google</a></button>
+        <button id="boton"><a href="https://www.google.com/doodles">Voy a tener suerte</a></button>
+    </div>
+    </main>
+    <footer>
+        <div id="primer-pie">
+            <span>Colombia</span>
+        </div>
+        <hr>
+        <div id="lista1">
+            <ul>
+                <span id="f1"><a href="https://about.google/?utm_source=google-CO&amp;utm_medium=referral&amp;utm_campaign=hp-footer&amp;fg=1">Sobre google</a></span>
+                <span id="f2"><a href="https://ads.google.com/intl/es-419_co/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1">Publicidad</a></span>
+                <span id="f3"><a href="https://smallbusiness.withgoogle.com/intl/es-419_co/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google&amp;utm_medium=ep&amp;utm_campaign=google_hpbfooter&amp;utm_content=google_hpbfooter&amp;gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&amp;c=CO#!/">Negocios</a></span>
+                <span id="f4"><a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a></span>
+            </ul>
+        </div>
+        <ul id="lista2">
+            <span id="f5"><a href="https://policies.google.com/privacy?hl=es-419&amp;fg=1">Privacidad</a></span>
+            <span id="f6"><a href="https://policies.google.com/terms?hl=es-419&amp;fg=1">Condiciones</a></span>
+            <span id="f7"><a href="http://127.0.0.1:5500/clon_google.html">Preferencias</a></span>
+
+        </ul>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+</body></html>

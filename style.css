@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* -------------------------------------------------------edicion del imagen usuario*/
+header{
+    width: 100%;
+    height: 5vh;
+    padding: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 1%;
+    font-size:smaller;
+    gap: 15px;
+}
+#foto{
+    
+
+    padding-top: 5px;
+}
+.Usuario {
+    border-radius: 100%;
+    margin-right: 1%;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+#cajon img{
+    width: 20px;
+    height: 18px;
+    border-radius: 100%;
+
+}
+#cajon:hover {
+
+    width:40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color:  rgba(225, 225, 225, 0.825);
+    border-radius: 100%;
+}
+#cajon:hover img{
+    width: 22px;
+    height: 20px;
+    border-radius: 100%;
+}
+/*--------------------------------------------------------edicion boton google apps*/
+
+/*---------------------------------------------------------edicion botones encabezado*/
+header ul{
+    padding-left: 5%;
+}
+header span{
+    margin-right: 10px;
+}
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+#b1:hover{
+    text-decoration: underline;
+}
+#b2:hover{
+    text-decoration: underline;
+}
+/*--------------------------------------------------------------edicion logo google*/
+main {
+    width: 100%;
+    height: 580px;
+}
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12vh;
+    justify-content:center;
+    width: 100%;
+    padding-top: 5%;
+}
+.logo ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.azul{
+    color: rgb(18, 130, 241);
+}
+.amarillo{
+    color: rgb(246, 199, 10);
+}
+.rojo{
+    color: rgb(222, 45, 45);
+}
+.verde{
+    color: green;
+}
+/*------------------------------------------------------------ barra de busqueda*/
+.barra{
+    margin-top: 5dvh;
+    width: 100%;
+    height: 9%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.barra input {
+    border-radius: 25px;
+    height: 100%;
+    width: 45%;
+    padding: 20px;
+    padding-left: 50px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-color: rgb(224, 224, 224);
+    border-style:solid;border-width: 1px;
+/* ------------------------------------------------------------ imagenes de la barra de busqueda lupa*/
+    background-image: url(./image/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 2%;
+    background-size: contain;
+    background-size: 35px;
+}
+.barra:hover input{
+    box-shadow: 1px 1px 4px 1px rgba(225, 225, 225, 0.914);
+}
+.barra:active input{
+    border-color: rgb(224, 224, 224);
+    border-style:solid;border-width: 1px;
+}
+
+/*-------------------------------------------------------------imagenes de la barra de busqueda microfono y camara*/
+#micro{
+    position: absolute;
+    top: 9%;
+    right: 25%;
+    display: flex;
+    float: right;
+    width: 10%;
+    margin-top: 0.2%;
+    height: 70%;
+}
+#img{
+    display: flex;
+    border-radius: 100%;
+}
+/*------------------------------------------------------------ botones cerca de la barra de busqueda*/
+.botones{
+    display: flex;
+    height: 7%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1%;
+    gap: 2%;
+}
+#boton{
+    height: 80%;
+    width: 12%;
+    color: rgb(74, 73, 73);
+    background-color: rgb(246, 246, 252);
+    border-style: none;
+    margin-top: 9px;
+}
+#boton a{
+    color: inherit;
+    text-decoration: none;
+}
+#boton:hover{
+    box-shadow: 1px 1px 4px 1px rgba(225, 225, 225, 0.914);
+    border-color:rgba(140, 139, 139, 0.919);
+}
+/*-----------------------------------------------------------------------etiquetas de la barra de busqueda*/
+#micro a[data-title="Busqueda por voz"]:hover::after{
+    width: 80%;height: 15%;
+    content: attr(data-title);
+    padding: 10px 8px;
+    color: #333;
+    position: absolute;
+    left: -40%;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 20px;
+    box-shadow: 0px 0px 4px #222;
+    background-color: #222222ee;
+    font-size:x-small; color: white;font-family: Arial, Helvetica, sans-serif;font-weight: bold;
+    text-align:center;text-justify:distribute;
+}
+#micro a[data-title="Busqueda por imagen"]:hover::after{
+    width: 80%;height: 15%;
+    content: attr(data-title);
+    padding: 10px 8px;
+    color: #333;
+    position: absolute;
+    left: 10%;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 20px;
+    box-shadow: 0px 0px 4px #222;
+    background-color: #222222ee;
+    font-size:x-small; color: white;font-family: Arial, Helvetica, sans-serif;font-weight: bold;
+    text-align:center;text-justify:distribute;
+}
+/*------------------------------------------------------------ menu pie de pagina*/
+footer{
+    background-color: rgba(228, 227, 227, 0.626);
+    width: 100%;
+    height: 100px;
+    color: gray;
+
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+#primer-pie{
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+}
+#primer-pie span{
+    display: flex;
+    width: 80px;
+    height: 30px;
+    padding-top: 20px;
+}
+#lista1{
+    display: flex;
+    float: left;
+    flex-direction: row;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; padding-left: 30px;
+    font-size:14px;
+}
+#lista1 span{
+    padding-left: 15px;
+}
+#lista2{
+    display: flex;
+    float: right;
+    flex-direction: row;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; padding-right: 40px;
+    font-size:14px;
+}
+#lista2 span{
+    padding-left: 15px;
+}
+#f1:hover{
+    text-decoration: underline;
+}
+#f2:hover{
+    text-decoration: underline;
+}
+#f3:hover{
+    text-decoration: underline;
+}
+#f4:hover{
+    text-decoration: underline;
+}
+#f5:hover{
+    text-decoration: underline;
+}
+#f6:hover{
+    text-decoration: underline;
+}
+#f7:hover{
+    text-decoration: underline;
+}
